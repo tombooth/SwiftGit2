@@ -20,6 +20,7 @@ function setup ()
 function cleanup () 
 {
     rm -rf "/tmp/openssl"
+    rm -rf "/tmp/openssl-*"
     rm -rf "/tmp/openssl-*.log"
 }
 
@@ -57,7 +58,7 @@ function fat_binary ()
     echo "Building fat binary..."
 
     mkdir -p "${ROOT_PATH}/External/openssl/include"
-    cp -r /tmp/openssl-i386/include/openssl "${ROOT_PATH}/External/openssl/include/"
+    cp -r "/tmp/openssl-${ARCH}/include/openssl" "${ROOT_PATH}/External/openssl/include/"
 
     mkdir -p "${ROOT_PATH}/External/openssl/lib"
 

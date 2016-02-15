@@ -39,12 +39,15 @@ function setup_build_environment ()
         CAN_BUILD_64BIT="1"
     fi
 
-    ARCHS="i386 armv7 armv7s"
-    if [ "${CAN_BUILD_64BIT}" -eq "1" ]
+    if [ -z "${ARCHS}" ]
     then
-        # For some stupid reason cmake needs simulator
-        # builds to be first
-        ARCHS="x86_64 ${ARCHS} arm64"
+	    ARCHS="i386 armv7 armv7s"
+	    if [ "${CAN_BUILD_64BIT}" -eq "1" ]
+	    then
+		# For some stupid reason cmake needs simulator
+		# builds to be first
+		ARCHS="x86_64 ${ARCHS} arm64"
+	    fi
     fi
 }
 

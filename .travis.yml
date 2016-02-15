@@ -6,10 +6,14 @@ sudo: false # Enable container-based builds
 
 install:
   - gem install scan
-  - brew install cmake
-  - brew install libssh2
+  - brew install cmake automake libssh2
 
-script: scan -w SwiftGit2.xcworkspace -s "SwiftGit2-OSX"
+env:
+  - PLATFORM="OSX"
+  - PLATFORM="iOS" ARCHS="x86_64 i386"
+
+script:
+  - scan -w SwiftGit2.xcworkspace -s "SwiftGit2-${PLATFORM}"
 
 branches:
   only: # whitelist
