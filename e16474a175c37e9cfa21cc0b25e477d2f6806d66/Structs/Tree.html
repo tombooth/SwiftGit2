@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Tree Struct Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Struct/Tree" class="dashAnchor"></a>
+    <a title="Tree Struct Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">SwiftGit2 Docs</a> (74% documented)</p>
+        <p class="header-right"><a href="https://github.com/SwiftGit2/SwiftGit2"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">SwiftGit2 Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        Tree Struct Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/Repository.html">Repository</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Global Variables.html">Global Variables</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Global Variables.html#/s:v9SwiftGit218libGit2ErrorDomainSS">libGit2ErrorDomain</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/Pointer.html">Pointer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TagReference.html">TagReference</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:ZF9SwiftGit2oi2eeFTVS_3OIDS0__Sb">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:ZF9SwiftGit2oi2eeFTVS_6RemoteS0__Sb">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:ZF9SwiftGit2oi2eeuRq_S_10ObjectType_FTq_q__Sb">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:ZF9SwiftGit2oi2eeFTVS_9SignatureS0__Sb">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:ZF9SwiftGit2oi2eeFTVVS_4Tree5EntryS1__Sb">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:ZF9SwiftGit2oi2eeuRq_S_13ReferenceType_FTq_q__Sb">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:ZF9SwiftGit2oi2eeuRq_S_11PointerType_FTq_q__Sb">==(_:_:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/ObjectType.html">ObjectType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/PointerType.html">PointerType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ReferenceType.html">ReferenceType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structs</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Blob.html">Blob</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Branch.html">Branch</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CheckoutStrategy.html">CheckoutStrategy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Commit.html">Commit</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/OID.html">OID</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PointerTo.html">PointerTo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Reference.html">Reference</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Remote.html">Remote</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Signature.html">Signature</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Tag.html">Tag</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Tree.html">Tree</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Tree</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Tree</span><span class="p">:</span> <span class="kt">ObjectType</span></code></pre>
+
+                </div>
+              </div>
+            <p>A git tree.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvV9SwiftGit24Tree4typeVSC9git_otype"></a>
+                    <a name="//apple_ref/swift/Variable/type" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvV9SwiftGit24Tree4typeVSC9git_otype">type</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Tree</span><span class="p">:</span> <span class="kt">ObjectType</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/SwiftGit2/SwiftGit2/tree/e16474a175c37e9cfa21cc0b25e477d2f6806d66/SwiftGit2/Objects.swift#L0">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:VV9SwiftGit24Tree5Entry"></a>
+                    <a name="//apple_ref/swift/Struct/Entry" class="dashAnchor"></a>
+                    <a class="token" href="#/s:VV9SwiftGit24Tree5Entry">Entry</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>An entry in a <code><a href="../Structs/Tree.html">Tree</a></code>.</p>
+
+                        <a href="../Structs/Tree/Entry.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Entry</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/SwiftGit2/SwiftGit2/tree/e16474a175c37e9cfa21cc0b25e477d2f6806d66/SwiftGit2/Objects.swift#L108-L132">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vV9SwiftGit24Tree3oidVS_3OID"></a>
+                    <a name="//apple_ref/swift/Property/oid" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vV9SwiftGit24Tree3oidVS_3OID">oid</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The OID of the tree.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">oid</span><span class="p">:</span> <span class="kt">OID</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/SwiftGit2/SwiftGit2/tree/e16474a175c37e9cfa21cc0b25e477d2f6806d66/SwiftGit2/Objects.swift#L135">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vV9SwiftGit24Tree7entriesGVSs10DictionarySSVS0_5Entry_"></a>
+                    <a name="//apple_ref/swift/Property/entries" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vV9SwiftGit24Tree7entriesGVSs10DictionarySSVS0_5Entry_">entries</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The entries in the tree.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">entries</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span> <span class="kt">Entry</span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/SwiftGit2/SwiftGit2/tree/e16474a175c37e9cfa21cc0b25e477d2f6806d66/SwiftGit2/Objects.swift#L138">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FV9SwiftGit24TreecFMS0_FVSs14COpaquePointerS0_"></a>
+                    <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FV9SwiftGit24TreecFMS0_FVSs14COpaquePointerS0_">init(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create an instance with a libgit2 <code>git_tree</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">pointer</span><span class="p">:</span> <span class="kt">COpaquePointer</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/SwiftGit2/SwiftGit2/tree/e16474a175c37e9cfa21cc0b25e477d2f6806d66/SwiftGit2/Objects.swift#L141-L150">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vVV9SwiftGit24Tree5Entry9hashValueSi"></a>
+                    <a name="//apple_ref/swift/Property/hashValue" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vVV9SwiftGit24Tree5Entry9hashValueSi">hashValue</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Tree</span><span class="p">:</span> <span class="kt">ObjectType</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/SwiftGit2/SwiftGit2/tree/e16474a175c37e9cfa21cc0b25e477d2f6806d66/SwiftGit2/Objects.swift#L154-L156">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vVV9SwiftGit24Tree5Entry11descriptionSS"></a>
+                    <a name="//apple_ref/swift/Property/description" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vVV9SwiftGit24Tree5Entry11descriptionSS">description</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Tree</span><span class="p">:</span> <span class="kt">ObjectType</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/SwiftGit2/SwiftGit2/tree/e16474a175c37e9cfa21cc0b25e477d2f6806d66/SwiftGit2/Objects.swift#L160-L162">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vV9SwiftGit24Tree9hashValueSi"></a>
+                    <a name="//apple_ref/swift/Property/hashValue" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vV9SwiftGit24Tree9hashValueSi">hashValue</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Tree</span><span class="p">:</span> <span class="kt">ObjectType</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/SwiftGit2/SwiftGit2/tree/e16474a175c37e9cfa21cc0b25e477d2f6806d66/SwiftGit2/Objects.swift#L172-L174">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2016 <a class="link" href="https://github.com/SwiftGit2" target="_blank" rel="external">SwiftGit2</a>. All rights reserved. (Last updated: 2016-02-29)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.5.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

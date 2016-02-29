@@ -1,0 +1,979 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Repository Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/Repository" class="dashAnchor"></a>
+    <a title="Repository Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">SwiftGit2 Docs</a> (74% documented)</p>
+        <p class="header-right"><a href="https://github.com/SwiftGit2/SwiftGit2"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">SwiftGit2 Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        Repository Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/Repository.html">Repository</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Global Variables.html">Global Variables</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Global Variables.html#/s:v9SwiftGit218libGit2ErrorDomainSS">libGit2ErrorDomain</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/Pointer.html">Pointer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TagReference.html">TagReference</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:ZF9SwiftGit2oi2eeFTVS_3OIDS0__Sb">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:ZF9SwiftGit2oi2eeFTVS_6RemoteS0__Sb">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:ZF9SwiftGit2oi2eeuRq_S_10ObjectType_FTq_q__Sb">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:ZF9SwiftGit2oi2eeFTVS_9SignatureS0__Sb">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:ZF9SwiftGit2oi2eeFTVVS_4Tree5EntryS1__Sb">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:ZF9SwiftGit2oi2eeuRq_S_13ReferenceType_FTq_q__Sb">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:ZF9SwiftGit2oi2eeuRq_S_11PointerType_FTq_q__Sb">==(_:_:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/ObjectType.html">ObjectType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/PointerType.html">PointerType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ReferenceType.html">ReferenceType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structs</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Blob.html">Blob</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Branch.html">Branch</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CheckoutStrategy.html">CheckoutStrategy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Commit.html">Commit</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/OID.html">OID</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PointerTo.html">PointerTo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Reference.html">Reference</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Remote.html">Remote</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Signature.html">Signature</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Tag.html">Tag</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Tree.html">Tree</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Repository</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">final</span> <span class="kd">public</span> <span class="kd">class</span> <span class="kt">Repository</span></code></pre>
+
+                </div>
+              </div>
+            <p>A git repository.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Creating%20Repositories"></a>
+                <a name="//apple_ref/swift/Section/Creating Repositories" class="dashAnchor"></a>
+                <a href="#/Creating%20Repositories">
+                  <h3 class="section-name">Creating Repositories</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFC9SwiftGit210Repository5atURLERR"></a>
+                    <a name="//apple_ref/swift/Method/atURL(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFC9SwiftGit210Repository5atURLERR">atURL(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Load the repository at the given URL.</p>
+
+<p>URL - The URL of the repository.</p>
+
+<p>Returns a <code>Result</code> with a <code><a href="../Classes/Repository.html">Repository</a></code> or an error.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">class</span> <span class="kd">public</span> <span class="kd">func</span> <span class="nf">atURL</span><span class="p">(</span><span class="kt">URL</span><span class="p">:</span> <span class="kt">NSURL</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Result</span><span class="o">&lt;</span><span class="kt">Repository</span><span class="p">,</span> <span class="kt">NSError</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/SwiftGit2/SwiftGit2/tree/e16474a175c37e9cfa21cc0b25e477d2f6806d66/SwiftGit2/Repository.swift#L24-L34">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Initializers"></a>
+                <a name="//apple_ref/swift/Section/Initializers" class="dashAnchor"></a>
+                <a href="#/Initializers">
+                  <h3 class="section-name">Initializers</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC9SwiftGit210RepositorycFMS0_FVSs14COpaquePointerS0_"></a>
+                    <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC9SwiftGit210RepositorycFMS0_FVSs14COpaquePointerS0_">init(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create an instance with a libgit2 <code>git_repository</code> object.</p>
+
+<p>The Repository assumes ownership of the <code>git_repository</code> object.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">_</span> <span class="nv">pointer</span><span class="p">:</span> <span class="kt">COpaquePointer</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/SwiftGit2/SwiftGit2/tree/e16474a175c37e9cfa21cc0b25e477d2f6806d66/SwiftGit2/Repository.swift#L41-L46">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Properties"></a>
+                <a name="//apple_ref/swift/Section/Properties" class="dashAnchor"></a>
+                <a href="#/Properties">
+                  <h3 class="section-name">Properties</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC9SwiftGit210Repository7pointerVSs14COpaquePointer"></a>
+                    <a name="//apple_ref/swift/Property/pointer" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC9SwiftGit210Repository7pointerVSs14COpaquePointer">pointer</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The underlying libgit2 <code>git_repository</code> object.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">pointer</span><span class="p">:</span> <span class="kt">COpaquePointer</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/SwiftGit2/SwiftGit2/tree/e16474a175c37e9cfa21cc0b25e477d2f6806d66/SwiftGit2/Repository.swift#L55">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC9SwiftGit210Repository12directoryURLGSqCSo5NSURL_"></a>
+                    <a name="//apple_ref/swift/Property/directoryURL" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC9SwiftGit210Repository12directoryURLGSqCSo5NSURL_">directoryURL</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The URL of the repository&rsquo;s working directory, or <code>nil</code> if the
+repository is bare.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">directoryURL</span><span class="p">:</span> <span class="kt">NSURL</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/SwiftGit2/SwiftGit2/tree/e16474a175c37e9cfa21cc0b25e477d2f6806d66/SwiftGit2/Repository.swift#L59">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Object%20Lookups"></a>
+                <a name="//apple_ref/swift/Section/Object Lookups" class="dashAnchor"></a>
+                <a href="#/Object%20Lookups">
+                  <h3 class="section-name">Object Lookups</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC9SwiftGit210Repository13objectWithOIDERR"></a>
+                    <a name="//apple_ref/swift/Method/objectWithOID(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC9SwiftGit210Repository13objectWithOIDERR">objectWithOID(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Loads the object with the given OID.</p>
+
+<p>oid - The OID of the blob to look up.</p>
+
+<p>Returns a <code><a href="../Structs/Blob.html">Blob</a></code>, <code><a href="../Structs/Commit.html">Commit</a></code>, <code><a href="../Structs/Tag.html">Tag</a></code>, or <code><a href="../Structs/Tree.html">Tree</a></code> if one exists, or an error.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">objectWithOID</span><span class="p">(</span><span class="nv">oid</span><span class="p">:</span> <span class="kt">OID</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Result</span><span class="o">&lt;</span><span class="kt">ObjectType</span><span class="p">,</span> <span class="kt">NSError</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/SwiftGit2/SwiftGit2/tree/e16474a175c37e9cfa21cc0b25e477d2f6806d66/SwiftGit2/Repository.swift#L95-L117">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC9SwiftGit210Repository11blobWithOIDERR"></a>
+                    <a name="//apple_ref/swift/Method/blobWithOID(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC9SwiftGit210Repository11blobWithOIDERR">blobWithOID(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Loads the blob with the given OID.</p>
+
+<p>oid - The OID of the blob to look up.</p>
+
+<p>Returns the blob if it exists, or an error.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">blobWithOID</span><span class="p">(</span><span class="nv">oid</span><span class="p">:</span> <span class="kt">OID</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Result</span><span class="o">&lt;</span><span class="kt">Blob</span><span class="p">,</span> <span class="kt">NSError</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/SwiftGit2/SwiftGit2/tree/e16474a175c37e9cfa21cc0b25e477d2f6806d66/SwiftGit2/Repository.swift#L124-L126">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC9SwiftGit210Repository13commitWithOIDERR"></a>
+                    <a name="//apple_ref/swift/Method/commitWithOID(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC9SwiftGit210Repository13commitWithOIDERR">commitWithOID(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Loads the commit with the given OID.</p>
+
+<p>oid - The OID of the commit to look up.</p>
+
+<p>Returns the commit if it exists, or an error.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">commitWithOID</span><span class="p">(</span><span class="nv">oid</span><span class="p">:</span> <span class="kt">OID</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Result</span><span class="o">&lt;</span><span class="kt">Commit</span><span class="p">,</span> <span class="kt">NSError</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/SwiftGit2/SwiftGit2/tree/e16474a175c37e9cfa21cc0b25e477d2f6806d66/SwiftGit2/Repository.swift#L133-L135">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC9SwiftGit210Repository10tagWithOIDERR"></a>
+                    <a name="//apple_ref/swift/Method/tagWithOID(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC9SwiftGit210Repository10tagWithOIDERR">tagWithOID(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Loads the tag with the given OID.</p>
+
+<p>oid - The OID of the tag to look up.</p>
+
+<p>Returns the tag if it exists, or an error.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">tagWithOID</span><span class="p">(</span><span class="nv">oid</span><span class="p">:</span> <span class="kt">OID</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Result</span><span class="o">&lt;</span><span class="kt">Tag</span><span class="p">,</span> <span class="kt">NSError</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/SwiftGit2/SwiftGit2/tree/e16474a175c37e9cfa21cc0b25e477d2f6806d66/SwiftGit2/Repository.swift#L142-L144">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC9SwiftGit210Repository11treeWithOIDERR"></a>
+                    <a name="//apple_ref/swift/Method/treeWithOID(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC9SwiftGit210Repository11treeWithOIDERR">treeWithOID(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Loads the tree with the given OID.</p>
+
+<p>oid - The OID of the tree to look up.</p>
+
+<p>Returns the tree if it exists, or an error.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">treeWithOID</span><span class="p">(</span><span class="nv">oid</span><span class="p">:</span> <span class="kt">OID</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Result</span><span class="o">&lt;</span><span class="kt">Tree</span><span class="p">,</span> <span class="kt">NSError</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/SwiftGit2/SwiftGit2/tree/e16474a175c37e9cfa21cc0b25e477d2f6806d66/SwiftGit2/Repository.swift#L151-L153">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC9SwiftGit210Repository17objectFromPointerERR"></a>
+                    <a name="//apple_ref/swift/Method/objectFromPointer(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC9SwiftGit210Repository17objectFromPointerERR">objectFromPointer(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Loads the referenced object from the pointer.</p>
+
+<p>pointer - A pointer to an object.</p>
+
+<p>Returns the object if it exists, or an error.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="n">objectFromPointer</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">(</span><span class="nv">pointer</span><span class="p">:</span> <span class="kt">PointerTo</span><span class="o">&lt;</span><span class="kt">T</span><span class="o">&gt;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Result</span><span class="o">&lt;</span><span class="kt">T</span><span class="p">,</span> <span class="kt">NSError</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/SwiftGit2/SwiftGit2/tree/e16474a175c37e9cfa21cc0b25e477d2f6806d66/SwiftGit2/Repository.swift#L160-L162">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Remote%20Lookups"></a>
+                <a name="//apple_ref/swift/Section/Remote Lookups" class="dashAnchor"></a>
+                <a href="#/Remote%20Lookups">
+                  <h3 class="section-name">Remote Lookups</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC9SwiftGit210Repository10allRemotesERR"></a>
+                    <a name="//apple_ref/swift/Method/allRemotes()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC9SwiftGit210Repository10allRemotesERR">allRemotes()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Loads all the remotes in the repository.</p>
+
+<p>Returns an array of remotes, or an error.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">allRemotes</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Result</span><span class="o">&lt;</span><span class="p">[</span><span class="kt">Remote</span><span class="p">],</span> <span class="kt">NSError</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/SwiftGit2/SwiftGit2/tree/e16474a175c37e9cfa21cc0b25e477d2f6806d66/SwiftGit2/Repository.swift#L187-L208">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC9SwiftGit210Repository14remoteWithNameERR"></a>
+                    <a name="//apple_ref/swift/Method/remoteWithName(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC9SwiftGit210Repository14remoteWithNameERR">remoteWithName(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Load a remote from the repository.</p>
+
+<p>name - The name of the remote.</p>
+
+<p>Returns the remote if it exists, or an error.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">remoteWithName</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Result</span><span class="o">&lt;</span><span class="kt">Remote</span><span class="p">,</span> <span class="kt">NSError</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/SwiftGit2/SwiftGit2/tree/e16474a175c37e9cfa21cc0b25e477d2f6806d66/SwiftGit2/Repository.swift#L215-L226">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Reference%20Lookups"></a>
+                <a name="//apple_ref/swift/Section/Reference Lookups" class="dashAnchor"></a>
+                <a href="#/Reference%20Lookups">
+                  <h3 class="section-name">Reference Lookups</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC9SwiftGit210Repository20referencesWithPrefixERR"></a>
+                    <a name="//apple_ref/swift/Method/referencesWithPrefix(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC9SwiftGit210Repository20referencesWithPrefixERR">referencesWithPrefix(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Load all the references with the given prefix (e.g. <q>refs/heads/</q>)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">referencesWithPrefix</span><span class="p">(</span><span class="nv">prefix</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Result</span><span class="o">&lt;</span><span class="p">[</span><span class="kt">ReferenceType</span><span class="p">],</span> <span class="kt">NSError</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/SwiftGit2/SwiftGit2/tree/e16474a175c37e9cfa21cc0b25e477d2f6806d66/SwiftGit2/Repository.swift#L231-L256">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC9SwiftGit210Repository17referenceWithNameERR"></a>
+                    <a name="//apple_ref/swift/Method/referenceWithName(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC9SwiftGit210Repository17referenceWithNameERR">referenceWithName(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Load the reference with the given long name (e.g. <q>refs/heads/master</q>)</p>
+
+<p>If the reference is a branch, a <code><a href="../Structs/Branch.html">Branch</a></code> will be returned. If the
+reference is a tag, a <code><a href="../Enums/TagReference.html">TagReference</a></code> will be returned. Otherwise, a
+<code><a href="../Structs/Reference.html">Reference</a></code> will be returned.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">referenceWithName</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Result</span><span class="o">&lt;</span><span class="kt">ReferenceType</span><span class="p">,</span> <span class="kt">NSError</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/SwiftGit2/SwiftGit2/tree/e16474a175c37e9cfa21cc0b25e477d2f6806d66/SwiftGit2/Repository.swift#L263-L274">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC9SwiftGit210Repository13localBranchesERR"></a>
+                    <a name="//apple_ref/swift/Method/localBranches()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC9SwiftGit210Repository13localBranchesERR">localBranches()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Load and return a list of all local branches.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">localBranches</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Result</span><span class="o">&lt;</span><span class="p">[</span><span class="kt">Branch</span><span class="p">],</span> <span class="kt">NSError</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/SwiftGit2/SwiftGit2/tree/e16474a175c37e9cfa21cc0b25e477d2f6806d66/SwiftGit2/Repository.swift#L277-L282">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC9SwiftGit210Repository14remoteBranchesERR"></a>
+                    <a name="//apple_ref/swift/Method/remoteBranches()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC9SwiftGit210Repository14remoteBranchesERR">remoteBranches()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Load and return a list of all remote branches.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">remoteBranches</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Result</span><span class="o">&lt;</span><span class="p">[</span><span class="kt">Branch</span><span class="p">],</span> <span class="kt">NSError</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/SwiftGit2/SwiftGit2/tree/e16474a175c37e9cfa21cc0b25e477d2f6806d66/SwiftGit2/Repository.swift#L285-L290">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC9SwiftGit210Repository19localBranchWithNameERR"></a>
+                    <a name="//apple_ref/swift/Method/localBranchWithName(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC9SwiftGit210Repository19localBranchWithNameERR">localBranchWithName(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Load the local branch with the given name (e.g., <q>master</q>).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">localBranchWithName</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Result</span><span class="o">&lt;</span><span class="kt">Branch</span><span class="p">,</span> <span class="kt">NSError</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/SwiftGit2/SwiftGit2/tree/e16474a175c37e9cfa21cc0b25e477d2f6806d66/SwiftGit2/Repository.swift#L293-L295">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC9SwiftGit210Repository20remoteBranchWithNameERR"></a>
+                    <a name="//apple_ref/swift/Method/remoteBranchWithName(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC9SwiftGit210Repository20remoteBranchWithNameERR">remoteBranchWithName(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Load the remote branch with the given name (e.g., <q>origin/master</q>).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">remoteBranchWithName</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Result</span><span class="o">&lt;</span><span class="kt">Branch</span><span class="p">,</span> <span class="kt">NSError</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/SwiftGit2/SwiftGit2/tree/e16474a175c37e9cfa21cc0b25e477d2f6806d66/SwiftGit2/Repository.swift#L298-L300">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC9SwiftGit210Repository7allTagsERR"></a>
+                    <a name="//apple_ref/swift/Method/allTags()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC9SwiftGit210Repository7allTagsERR">allTags()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Load and return a list of all the <code><a href="../Enums/TagReference.html">TagReference</a></code>s.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">allTags</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Result</span><span class="o">&lt;</span><span class="p">[</span><span class="kt">TagReference</span><span class="p">],</span> <span class="kt">NSError</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/SwiftGit2/SwiftGit2/tree/e16474a175c37e9cfa21cc0b25e477d2f6806d66/SwiftGit2/Repository.swift#L303-L308">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC9SwiftGit210Repository11tagWithNameERR"></a>
+                    <a name="//apple_ref/swift/Method/tagWithName(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC9SwiftGit210Repository11tagWithNameERR">tagWithName(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Load the tag with the given name (e.g., <q>tag-2</q>).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">tagWithName</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Result</span><span class="o">&lt;</span><span class="kt">TagReference</span><span class="p">,</span> <span class="kt">NSError</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/SwiftGit2/SwiftGit2/tree/e16474a175c37e9cfa21cc0b25e477d2f6806d66/SwiftGit2/Repository.swift#L311-L313">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Working%20Directory"></a>
+                <a name="//apple_ref/swift/Section/Working Directory" class="dashAnchor"></a>
+                <a href="#/Working%20Directory">
+                  <h3 class="section-name">Working Directory</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC9SwiftGit210Repository4HEADERR"></a>
+                    <a name="//apple_ref/swift/Method/HEAD()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC9SwiftGit210Repository4HEADERR">HEAD()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Load the reference pointed at by HEAD.</p>
+
+<p>When on a branch, this will return the current <code><a href="../Structs/Branch.html">Branch</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="kt">HEAD</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Result</span><span class="o">&lt;</span><span class="kt">ReferenceType</span><span class="p">,</span> <span class="kt">NSError</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/SwiftGit2/SwiftGit2/tree/e16474a175c37e9cfa21cc0b25e477d2f6806d66/SwiftGit2/Repository.swift#L320-L329">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC9SwiftGit210Repository7setHEADERR"></a>
+                    <a name="//apple_ref/swift/Method/setHEAD(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC9SwiftGit210Repository7setHEADERR">setHEAD(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set HEAD to the given oid (detached).</p>
+
+<p>:param: oid The OID to set as HEAD.
+:returns: Returns a result with void or the error that occurred.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">setHEAD</span><span class="p">(</span><span class="nv">oid</span><span class="p">:</span> <span class="kt">OID</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Result</span><span class="o">&lt;</span><span class="p">(),</span> <span class="kt">NSError</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/SwiftGit2/SwiftGit2/tree/e16474a175c37e9cfa21cc0b25e477d2f6806d66/SwiftGit2/Repository.swift#L335-L342">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC9SwiftGit210Repository8checkoutERR"></a>
+                    <a name="//apple_ref/swift/Method/checkout(strategy:progress:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC9SwiftGit210Repository8checkoutERR">checkout(strategy:progress:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Check out HEAD.</p>
+
+<p>:param: strategy The checkout strategy to use.
+:param: progress A block that&rsquo;s called with the progress of the checkout.
+:returns: Returns a result with void or the error that occurred.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">checkout</span><span class="p">(</span><span class="n">strategy</span> <span class="nv">strategy</span><span class="p">:</span> <span class="kt">CheckoutStrategy</span><span class="p">,</span> <span class="nv">progress</span><span class="p">:</span> <span class="kt">CheckoutProgressBlock</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Result</span><span class="o">&lt;</span><span class="p">(),</span> <span class="kt">NSError</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/SwiftGit2/SwiftGit2/tree/e16474a175c37e9cfa21cc0b25e477d2f6806d66/SwiftGit2/Repository.swift#L361-L371">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2016 <a class="link" href="https://github.com/SwiftGit2" target="_blank" rel="external">SwiftGit2</a>. All rights reserved. (Last updated: 2016-02-29)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.5.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

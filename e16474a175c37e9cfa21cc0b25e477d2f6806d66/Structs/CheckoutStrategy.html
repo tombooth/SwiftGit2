@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>CheckoutStrategy Struct Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Struct/CheckoutStrategy" class="dashAnchor"></a>
+    <a title="CheckoutStrategy Struct Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">SwiftGit2 Docs</a> (74% documented)</p>
+        <p class="header-right"><a href="https://github.com/SwiftGit2/SwiftGit2"><img src="../img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">SwiftGit2 Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        CheckoutStrategy Struct Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/Repository.html">Repository</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Global Variables.html">Global Variables</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Global Variables.html#/s:v9SwiftGit218libGit2ErrorDomainSS">libGit2ErrorDomain</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/Pointer.html">Pointer</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/TagReference.html">TagReference</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:ZF9SwiftGit2oi2eeFTVS_3OIDS0__Sb">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:ZF9SwiftGit2oi2eeFTVS_6RemoteS0__Sb">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:ZF9SwiftGit2oi2eeuRq_S_10ObjectType_FTq_q__Sb">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:ZF9SwiftGit2oi2eeFTVS_9SignatureS0__Sb">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:ZF9SwiftGit2oi2eeFTVVS_4Tree5EntryS1__Sb">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:ZF9SwiftGit2oi2eeuRq_S_13ReferenceType_FTq_q__Sb">==(_:_:)</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:ZF9SwiftGit2oi2eeuRq_S_11PointerType_FTq_q__Sb">==(_:_:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/ObjectType.html">ObjectType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/PointerType.html">PointerType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/ReferenceType.html">ReferenceType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structs</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Blob.html">Blob</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Branch.html">Branch</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CheckoutStrategy.html">CheckoutStrategy</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Commit.html">Commit</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/OID.html">OID</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/PointerTo.html">PointerTo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Reference.html">Reference</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Remote.html">Remote</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Signature.html">Signature</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Tag.html">Tag</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Tree.html">Tree</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>CheckoutStrategy</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CheckoutStrategy</span> <span class="p">:</span> <span class="kt">OptionSetType</span></code></pre>
+
+                </div>
+              </div>
+            <p>The flags defining how a checkout should be performed.
+More detail is available in the libgit2 documentation for <code>git_checkout_strategy_t</code>.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Initialization"></a>
+                <a name="//apple_ref/swift/Section/Initialization" class="dashAnchor"></a>
+                <a href="#/Initialization">
+                  <h3 class="section-name">Initialization</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FV9SwiftGit216CheckoutStrategycFMS0_FT10nilLiteralT__S0_"></a>
+                    <a name="//apple_ref/swift/Method/init(nilLiteral:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FV9SwiftGit216CheckoutStrategycFMS0_FT10nilLiteralT__S0_">init(nilLiteral:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Create an instance initialized with <code>nil</code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">nilLiteral</span><span class="p">:</span> <span class="p">())</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/SwiftGit2/SwiftGit2/tree/e16474a175c37e9cfa21cc0b25e477d2f6806d66/SwiftGit2/CheckoutStrategy.swift#L17-L19">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FV9SwiftGit216CheckoutStrategycFMS0_FT8rawValueSu_S0_"></a>
+                    <a name="//apple_ref/swift/Method/init(rawValue:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FV9SwiftGit216CheckoutStrategycFMS0_FT8rawValueSu_S0_">init(rawValue:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CheckoutStrategy</span> <span class="p">:</span> <span class="kt">OptionSetType</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/SwiftGit2/SwiftGit2/tree/e16474a175c37e9cfa21cc0b25e477d2f6806d66/SwiftGit2/CheckoutStrategy.swift#L21-L23">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FV9SwiftGit216CheckoutStrategycFMS0_FVSC23git_checkout_strategy_tS0_"></a>
+                    <a name="//apple_ref/swift/Method/init(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FV9SwiftGit216CheckoutStrategycFMS0_FVSC23git_checkout_strategy_tS0_">init(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CheckoutStrategy</span> <span class="p">:</span> <span class="kt">OptionSetType</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/SwiftGit2/SwiftGit2/tree/e16474a175c37e9cfa21cc0b25e477d2f6806d66/SwiftGit2/CheckoutStrategy.swift#L25-L27">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvV9SwiftGit216CheckoutStrategy8allZerosS0_"></a>
+                    <a name="//apple_ref/swift/Variable/allZeros" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvV9SwiftGit216CheckoutStrategy8allZerosS0_">allZeros</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CheckoutStrategy</span> <span class="p">:</span> <span class="kt">OptionSetType</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/SwiftGit2/SwiftGit2/tree/e16474a175c37e9cfa21cc0b25e477d2f6806d66/SwiftGit2/CheckoutStrategy.swift#L29-L31">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Properties"></a>
+                <a name="//apple_ref/swift/Section/Properties" class="dashAnchor"></a>
+                <a href="#/Properties">
+                  <h3 class="section-name">Properties</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vV9SwiftGit216CheckoutStrategy8rawValueSu"></a>
+                    <a name="//apple_ref/swift/Property/rawValue" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vV9SwiftGit216CheckoutStrategy8rawValueSu">rawValue</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CheckoutStrategy</span> <span class="p">:</span> <span class="kt">OptionSetType</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/SwiftGit2/SwiftGit2/tree/e16474a175c37e9cfa21cc0b25e477d2f6806d66/SwiftGit2/CheckoutStrategy.swift#L35-L37">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vV9SwiftGit216CheckoutStrategy21git_checkout_strategyVSC23git_checkout_strategy_t"></a>
+                    <a name="//apple_ref/swift/Property/git_checkout_strategy" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vV9SwiftGit216CheckoutStrategy21git_checkout_strategyVSC23git_checkout_strategy_t">git_checkout_strategy</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">CheckoutStrategy</span> <span class="p">:</span> <span class="kt">OptionSetType</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/SwiftGit2/SwiftGit2/tree/e16474a175c37e9cfa21cc0b25e477d2f6806d66/SwiftGit2/CheckoutStrategy.swift#L39-L41">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Values"></a>
+                <a name="//apple_ref/swift/Section/Values" class="dashAnchor"></a>
+                <a href="#/Values">
+                  <h3 class="section-name">Values</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvV9SwiftGit216CheckoutStrategy4NoneS0_"></a>
+                    <a name="//apple_ref/swift/Variable/None" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvV9SwiftGit216CheckoutStrategy4NoneS0_">None</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Default is a dry run, no actual updates.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">None</span> <span class="o">=</span> <span class="kt">CheckoutStrategy</span><span class="p">(</span><span class="kt">GIT_CHECKOUT_NONE</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/SwiftGit2/SwiftGit2/tree/e16474a175c37e9cfa21cc0b25e477d2f6806d66/SwiftGit2/CheckoutStrategy.swift#L46">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvV9SwiftGit216CheckoutStrategy4SafeS0_"></a>
+                    <a name="//apple_ref/swift/Variable/Safe" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvV9SwiftGit216CheckoutStrategy4SafeS0_">Safe</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Allow safe updates that cannot overwrite uncommitted data.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">Safe</span> <span class="o">=</span> <span class="kt">CheckoutStrategy</span><span class="p">(</span><span class="kt">GIT_CHECKOUT_SAFE</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/SwiftGit2/SwiftGit2/tree/e16474a175c37e9cfa21cc0b25e477d2f6806d66/SwiftGit2/CheckoutStrategy.swift#L49">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvV9SwiftGit216CheckoutStrategy5ForceS0_"></a>
+                    <a name="//apple_ref/swift/Variable/Force" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvV9SwiftGit216CheckoutStrategy5ForceS0_">Force</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Allow all updates to force working directory to look like index</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">Force</span> <span class="o">=</span> <span class="kt">CheckoutStrategy</span><span class="p">(</span><span class="kt">GIT_CHECKOUT_FORCE</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/SwiftGit2/SwiftGit2/tree/e16474a175c37e9cfa21cc0b25e477d2f6806d66/SwiftGit2/CheckoutStrategy.swift#L52">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvV9SwiftGit216CheckoutStrategy15RecreateMissingS0_"></a>
+                    <a name="//apple_ref/swift/Variable/RecreateMissing" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvV9SwiftGit216CheckoutStrategy15RecreateMissingS0_">RecreateMissing</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Allow checkout to recreate missing files.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">RecreateMissing</span> <span class="o">=</span> <span class="kt">CheckoutStrategy</span><span class="p">(</span><span class="kt">GIT_CHECKOUT_RECREATE_MISSING</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/SwiftGit2/SwiftGit2/tree/e16474a175c37e9cfa21cc0b25e477d2f6806d66/SwiftGit2/CheckoutStrategy.swift#L55">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvV9SwiftGit216CheckoutStrategy14AllowConflictsS0_"></a>
+                    <a name="//apple_ref/swift/Variable/AllowConflicts" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvV9SwiftGit216CheckoutStrategy14AllowConflictsS0_">AllowConflicts</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Allow checkout to make safe updates even if conflicts are found.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">AllowConflicts</span> <span class="o">=</span> <span class="kt">CheckoutStrategy</span><span class="p">(</span><span class="kt">GIT_CHECKOUT_ALLOW_CONFLICTS</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/SwiftGit2/SwiftGit2/tree/e16474a175c37e9cfa21cc0b25e477d2f6806d66/SwiftGit2/CheckoutStrategy.swift#L58">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvV9SwiftGit216CheckoutStrategy15RemoveUntrackedS0_"></a>
+                    <a name="//apple_ref/swift/Variable/RemoveUntracked" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvV9SwiftGit216CheckoutStrategy15RemoveUntrackedS0_">RemoveUntracked</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Remove untracked files not in index (that are not ignored).</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">RemoveUntracked</span> <span class="o">=</span> <span class="kt">CheckoutStrategy</span><span class="p">(</span><span class="kt">GIT_CHECKOUT_REMOVE_UNTRACKED</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/SwiftGit2/SwiftGit2/tree/e16474a175c37e9cfa21cc0b25e477d2f6806d66/SwiftGit2/CheckoutStrategy.swift#L61">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvV9SwiftGit216CheckoutStrategy13RemoveIgnoredS0_"></a>
+                    <a name="//apple_ref/swift/Variable/RemoveIgnored" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvV9SwiftGit216CheckoutStrategy13RemoveIgnoredS0_">RemoveIgnored</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Remove ignored files not in index.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">RemoveIgnored</span> <span class="o">=</span> <span class="kt">CheckoutStrategy</span><span class="p">(</span><span class="kt">GIT_CHECKOUT_REMOVE_IGNORED</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/SwiftGit2/SwiftGit2/tree/e16474a175c37e9cfa21cc0b25e477d2f6806d66/SwiftGit2/CheckoutStrategy.swift#L64">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvV9SwiftGit216CheckoutStrategy10UpdateOnlyS0_"></a>
+                    <a name="//apple_ref/swift/Variable/UpdateOnly" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvV9SwiftGit216CheckoutStrategy10UpdateOnlyS0_">UpdateOnly</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Only update existing files, don&rsquo;t create new ones.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">UpdateOnly</span> <span class="o">=</span> <span class="kt">CheckoutStrategy</span><span class="p">(</span><span class="kt">GIT_CHECKOUT_UPDATE_ONLY</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/SwiftGit2/SwiftGit2/tree/e16474a175c37e9cfa21cc0b25e477d2f6806d66/SwiftGit2/CheckoutStrategy.swift#L67">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvV9SwiftGit216CheckoutStrategy15DontUpdateIndexS0_"></a>
+                    <a name="//apple_ref/swift/Variable/DontUpdateIndex" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvV9SwiftGit216CheckoutStrategy15DontUpdateIndexS0_">DontUpdateIndex</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Normally checkout updates index entries as it goes; this stops that.
+Implies <code><a href="../Structs/CheckoutStrategy.html#/s:ZvV9SwiftGit216CheckoutStrategy14DontWriteIndexS0_">DontWriteIndex</a></code>.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">DontUpdateIndex</span> <span class="o">=</span> <span class="kt">CheckoutStrategy</span><span class="p">(</span><span class="kt">GIT_CHECKOUT_DONT_UPDATE_INDEX</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/SwiftGit2/SwiftGit2/tree/e16474a175c37e9cfa21cc0b25e477d2f6806d66/SwiftGit2/CheckoutStrategy.swift#L71">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvV9SwiftGit216CheckoutStrategy9NoRefreshS0_"></a>
+                    <a name="//apple_ref/swift/Variable/NoRefresh" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvV9SwiftGit216CheckoutStrategy9NoRefreshS0_">NoRefresh</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Don&rsquo;t refresh index/config/etc before doing checkout</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">NoRefresh</span> <span class="o">=</span> <span class="kt">CheckoutStrategy</span><span class="p">(</span><span class="kt">GIT_CHECKOUT_NO_REFRESH</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/SwiftGit2/SwiftGit2/tree/e16474a175c37e9cfa21cc0b25e477d2f6806d66/SwiftGit2/CheckoutStrategy.swift#L74">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvV9SwiftGit216CheckoutStrategy12SkipUnmergedS0_"></a>
+                    <a name="//apple_ref/swift/Variable/SkipUnmerged" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvV9SwiftGit216CheckoutStrategy12SkipUnmergedS0_">SkipUnmerged</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Allow checkout to skip unmerged files</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">SkipUnmerged</span> <span class="o">=</span> <span class="kt">CheckoutStrategy</span><span class="p">(</span><span class="kt">GIT_CHECKOUT_SKIP_UNMERGED</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/SwiftGit2/SwiftGit2/tree/e16474a175c37e9cfa21cc0b25e477d2f6806d66/SwiftGit2/CheckoutStrategy.swift#L77">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvV9SwiftGit216CheckoutStrategy7UseOursS0_"></a>
+                    <a name="//apple_ref/swift/Variable/UseOurs" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvV9SwiftGit216CheckoutStrategy7UseOursS0_">UseOurs</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>For unmerged files, checkout stage 2 from index</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">UseOurs</span> <span class="o">=</span> <span class="kt">CheckoutStrategy</span><span class="p">(</span><span class="kt">GIT_CHECKOUT_USE_OURS</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/SwiftGit2/SwiftGit2/tree/e16474a175c37e9cfa21cc0b25e477d2f6806d66/SwiftGit2/CheckoutStrategy.swift#L80">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvV9SwiftGit216CheckoutStrategy9UseTheirsS0_"></a>
+                    <a name="//apple_ref/swift/Variable/UseTheirs" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvV9SwiftGit216CheckoutStrategy9UseTheirsS0_">UseTheirs</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>For unmerged files, checkout stage 3 from index</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">UseTheirs</span> <span class="o">=</span> <span class="kt">CheckoutStrategy</span><span class="p">(</span><span class="kt">GIT_CHECKOUT_USE_THEIRS</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/SwiftGit2/SwiftGit2/tree/e16474a175c37e9cfa21cc0b25e477d2f6806d66/SwiftGit2/CheckoutStrategy.swift#L83">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvV9SwiftGit216CheckoutStrategy20DisablePathspecMatchS0_"></a>
+                    <a name="//apple_ref/swift/Variable/DisablePathspecMatch" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvV9SwiftGit216CheckoutStrategy20DisablePathspecMatchS0_">DisablePathspecMatch</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Treat pathspec as simple list of exact match file paths</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">DisablePathspecMatch</span> <span class="o">=</span> <span class="kt">CheckoutStrategy</span><span class="p">(</span><span class="kt">GIT_CHECKOUT_DISABLE_PATHSPEC_MATCH</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/SwiftGit2/SwiftGit2/tree/e16474a175c37e9cfa21cc0b25e477d2f6806d66/SwiftGit2/CheckoutStrategy.swift#L86">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvV9SwiftGit216CheckoutStrategy21SkipLockedDirectoriesS0_"></a>
+                    <a name="//apple_ref/swift/Variable/SkipLockedDirectories" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvV9SwiftGit216CheckoutStrategy21SkipLockedDirectoriesS0_">SkipLockedDirectories</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Ignore directories in use, they will be left empty</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">SkipLockedDirectories</span> <span class="o">=</span> <span class="kt">CheckoutStrategy</span><span class="p">(</span><span class="kt">GIT_CHECKOUT_SKIP_LOCKED_DIRECTORIES</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/SwiftGit2/SwiftGit2/tree/e16474a175c37e9cfa21cc0b25e477d2f6806d66/SwiftGit2/CheckoutStrategy.swift#L89">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvV9SwiftGit216CheckoutStrategy20DontOverwriteIgnoredS0_"></a>
+                    <a name="//apple_ref/swift/Variable/DontOverwriteIgnored" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvV9SwiftGit216CheckoutStrategy20DontOverwriteIgnoredS0_">DontOverwriteIgnored</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Don&rsquo;t overwrite ignored files that exist in the checkout target</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">DontOverwriteIgnored</span> <span class="o">=</span> <span class="kt">CheckoutStrategy</span><span class="p">(</span><span class="kt">GIT_CHECKOUT_DONT_OVERWRITE_IGNORED</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/SwiftGit2/SwiftGit2/tree/e16474a175c37e9cfa21cc0b25e477d2f6806d66/SwiftGit2/CheckoutStrategy.swift#L92">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvV9SwiftGit216CheckoutStrategy18ConflictStyleMergeS0_"></a>
+                    <a name="//apple_ref/swift/Variable/ConflictStyleMerge" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvV9SwiftGit216CheckoutStrategy18ConflictStyleMergeS0_">ConflictStyleMerge</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Write normal merge files for conflicts</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">ConflictStyleMerge</span> <span class="o">=</span> <span class="kt">CheckoutStrategy</span><span class="p">(</span><span class="kt">GIT_CHECKOUT_CONFLICT_STYLE_MERGE</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/SwiftGit2/SwiftGit2/tree/e16474a175c37e9cfa21cc0b25e477d2f6806d66/SwiftGit2/CheckoutStrategy.swift#L95">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvV9SwiftGit216CheckoutStrategy18ConflictStyleDiff3S0_"></a>
+                    <a name="//apple_ref/swift/Variable/ConflictStyleDiff3" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvV9SwiftGit216CheckoutStrategy18ConflictStyleDiff3S0_">ConflictStyleDiff3</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Include common ancestor data in diff3 format files for conflicts</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">ConflictStyleDiff3</span> <span class="o">=</span> <span class="kt">CheckoutStrategy</span><span class="p">(</span><span class="kt">GIT_CHECKOUT_CONFLICT_STYLE_DIFF3</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/SwiftGit2/SwiftGit2/tree/e16474a175c37e9cfa21cc0b25e477d2f6806d66/SwiftGit2/CheckoutStrategy.swift#L98">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvV9SwiftGit216CheckoutStrategy18DontRemoveExistingS0_"></a>
+                    <a name="//apple_ref/swift/Variable/DontRemoveExisting" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvV9SwiftGit216CheckoutStrategy18DontRemoveExistingS0_">DontRemoveExisting</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Don&rsquo;t overwrite existing files or folders</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">DontRemoveExisting</span> <span class="o">=</span> <span class="kt">CheckoutStrategy</span><span class="p">(</span><span class="kt">GIT_CHECKOUT_DONT_REMOVE_EXISTING</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/SwiftGit2/SwiftGit2/tree/e16474a175c37e9cfa21cc0b25e477d2f6806d66/SwiftGit2/CheckoutStrategy.swift#L101">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvV9SwiftGit216CheckoutStrategy14DontWriteIndexS0_"></a>
+                    <a name="//apple_ref/swift/Variable/DontWriteIndex" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvV9SwiftGit216CheckoutStrategy14DontWriteIndexS0_">DontWriteIndex</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Normally checkout writes the index upon completion; this prevents that.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">DontWriteIndex</span> <span class="o">=</span> <span class="kt">CheckoutStrategy</span><span class="p">(</span><span class="kt">GIT_CHECKOUT_DONT_WRITE_INDEX</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div class="slightly-smaller">
+                        <a href="https://github.com/SwiftGit2/SwiftGit2/tree/e16474a175c37e9cfa21cc0b25e477d2f6806d66/SwiftGit2/CheckoutStrategy.swift#L104">Show on GitHub</a>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2016 <a class="link" href="https://github.com/SwiftGit2" target="_blank" rel="external">SwiftGit2</a>. All rights reserved. (Last updated: 2016-02-29)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.5.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
