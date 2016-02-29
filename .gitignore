@@ -23,6 +23,9 @@ External/ios-openssl
 External/libgit2-ios
 External/libssh2-ios
 
+# generated documentation
+.build
+
 ### fastlane ###
 # fastlane - A streamlined workflow tool for Cocoa deployment
 
