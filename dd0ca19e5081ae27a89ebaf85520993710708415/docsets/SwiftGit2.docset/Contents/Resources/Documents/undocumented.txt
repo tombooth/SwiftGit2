@@ -1,0 +1,55 @@
+OID.swift
+	public let oid: git_oid
+	public var description: String
+	public var hashValue: Int
+	public func == (lhs: OID, rhs: OID) -> Bool
+Remotes.swift
+	public var hashValue: Int
+	public func == (lhs: Remote, rhs: Remote) -> Bool
+CheckoutStrategy.swift
+	public init(rawValue value: UInt)
+	public init(_ strategy: git_checkout_strategy_t)
+	public static var allZeros: CheckoutStrategy
+	public var rawValue: UInt
+	public var git_checkout_strategy: git_checkout_strategy_t
+Objects.swift
+	static var type: git_otype { get }
+	public func == <O: ObjectType>(lhs: O, rhs: O) -> Bool
+	public struct Signature
+	public struct Signature
+	public var hashValue: Int
+	public func == (lhs: Signature, rhs: Signature) -> Bool
+	public static let type = GIT_OBJ_COMMIT
+	public var hashValue: Int
+	public static let type = GIT_OBJ_TREE
+	public var hashValue: Int
+	public var description: String
+	public func == (lhs: Tree.Entry, rhs: Tree.Entry) -> Bool
+	public var hashValue: Int
+	public static let type = GIT_OBJ_BLOB
+	public var hashValue: Int
+	public static let type = GIT_OBJ_TAG
+	public var hashValue: Int
+References.swift
+	public func ==<T: ReferenceType>(lhs: T, rhs: T) -> Bool
+	public var hashValue: Int
+	public var hashValue: Int
+	public var hashValue: Int
+Pointers.swift
+	public func == <P: PointerType>(lhs: P, rhs: P) -> Bool
+	case Commit(OID)
+	case Tree(OID)
+	case Blob(OID)
+	case Tag(OID)
+	public var oid: OID
+	public var type: git_otype
+	public var hashValue: Int
+	public var description: String
+	public struct PointerTo<T: ObjectType>: PointerType
+	public let oid: OID
+	public var type: git_otype
+	public init(_ oid: OID)
+	public struct PointerTo&lt;T : ObjectType&gt; : PointerType
+	public var hashValue: Int
+Errors.swift
+	public let libGit2ErrorDomain = "org.libgit2.libgit2"
