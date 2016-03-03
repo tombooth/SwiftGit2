@@ -44,6 +44,19 @@ class RepositorySpec: QuickSpec {
 			}
 
 			it("should handle bare clones") {
+				let request = NSURLRequest(URL: NSURL(string: "http://github.com")!)
+				var response: NSURLResponse?
+
+				let data = try? NSURLConnection.sendSynchronousRequest(request, returningResponse: &response)
+
+				print(data)
+
+				let deets = UnsafeMutablePointer<UnsafeMutablePointer<addrinfo>>.alloc(1)
+				let inetResult = getaddrinfo("github.com", nil, nil, deets)
+				
+				expect(inetResult).to(equal(0))
+				expect(deets).notTo(equal(nil))
+
 				let remoteRepo = Fixtures.simpleRepository
 				let localURL = self.temporaryURLForPurpose("bare-clone")
 				let result = Repository.cloneFromURL(remoteRepo.directoryURL!, toWorkingDirectory: localURL, localClone: true, bare: true)
