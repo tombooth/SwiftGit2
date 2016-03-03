@@ -43,3 +43,12 @@ git_clone_options SG2CloneOptions() {
 
 	return result;
 }
+
+git_fetch_options SG2FetchOptions() {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wmissing-field-initializers"
+	git_fetch_options result = GIT_FETCH_OPTIONS_INIT;
+#pragma clang diagnostic pop
+
+	return result;
+}

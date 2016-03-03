@@ -11,9 +11,44 @@ import Result
 
 public typealias CheckoutProgressBlock = SG2CheckoutProgressBlock
 
+/// A wrapper to ensure the underlying data complies with the AnyObject
+/// protocol.
+class PayloadWrapper<T> {
+	internal let wrapped: T
+	init(_ val: T) {
+		self.wrapped = val
+	}
+}
+
+func wrapPayload(payload: Any) -> UnsafeMutablePointer<()> {
+	return UnsafeMutablePointer(Unmanaged.passRetained(PayloadWrapper(payload)).toOpaque())
+}
+
+func unwrapPaylod<T>(payload: UnsafeMutablePointer<()>) -> T {
+	return Unmanaged<PayloadWrapper<T>>.fromOpaque(COpaquePointer(payload)).takeRetainedValue().wrapped
+}
+
+/// Handle the request of credentials, passing through to a wrapped block after converting the arguments.
+/// Converts the result to the correct error code required by libgit2 (0 = success, 1 = rejected setting creds, -1 error)
+func credentialsCallback(cred: CredentialReference, url: UnsafePointer<Int8>, username: UnsafePointer<Int8>, allowedTypes: UInt32, payload: UnsafeMutablePointer<()>) -> Int32 {
+	let credentialsProvider: CredentialsProvider = unwrapPaylod(payload)
+	let credential = credentialsProvider(
+		CredentialType(rawValue: allowedTypes), String.fromCString(url), String.fromCString(username))
+
+	if let result = credential?.realise(cred) {
+		if case .Failure(_) = result {
+			return -1
+		} else {
+			return 0
+		}
+	} else {
+		return 1
+	}
+}
+
 /// A git repository.
 final public class Repository {
-	
+
 	// MARK: - Creating Repositories
 	
 	/// Load the repository at the given URL.
@@ -40,9 +75,11 @@ final public class Repository {
 	///
 	/// Returns a `Result` with a `Repository` or an error.
 	class public func cloneFromURL(remoteURL: NSURL, toWorkingDirectory: NSURL, localClone: Bool = false, bare: Bool = false, checkout: Bool = true,
-		checkoutStrategy: CheckoutStrategy = CheckoutStrategy.Safe, checkoutProgress: CheckoutProgressBlock? = nil) -> Result<Repository, NSError> {
+		checkoutStrategy: CheckoutStrategy = CheckoutStrategy.Safe, checkoutProgress: CheckoutProgressBlock? = nil,
+		credentialsProvider: CredentialsProvider? = nil) -> Result<Repository, NSError> {
 			var cloneOptions = SG2CloneOptions()
 			var checkoutOptions = SG2CheckoutOptions(checkoutProgress)
+			var fetchOptions = SG2FetchOptions()
 
 			cloneOptions.bare = bare ? 1 : 0
 
@@ -52,7 +89,14 @@ final public class Repository {
 
 			let strategy = checkout ? checkoutStrategy : CheckoutStrategy.None
 			checkoutOptions.checkout_strategy = strategy.git_checkout_strategy.rawValue
+
+			if let credentialsProvider = credentialsProvider {
+				fetchOptions.callbacks.payload = wrapPayload(credentialsProvider)
+				fetchOptions.callbacks.credentials = credentialsCallback
+			}
+
 			cloneOptions.checkout_opts = checkoutOptions
+			cloneOptions.fetch_opts = fetchOptions
 
 			var pointer: COpaquePointer = nil
 			let result = git_clone(&pointer, remoteURL.isFileReferenceURL() ? remoteURL.path! : remoteURL.absoluteString, toWorkingDirectory.fileSystemRepresentation, &cloneOptions)

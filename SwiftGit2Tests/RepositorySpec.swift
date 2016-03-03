@@ -88,6 +88,39 @@ class RepositorySpec: QuickSpec {
 					}
 				}
 			}
+
+			let privateRepo = NSProcessInfo.processInfo().environment["SG2TestPrivateRepo"]
+			let username = NSProcessInfo.processInfo().environment["SG2TestUsername"]
+			let publicKey = NSProcessInfo.processInfo().environment["SG2TestPublicKey"]
+			let privateKey = NSProcessInfo.processInfo().environment["SG2TestPrivateKey"]
+			let passphrase = NSProcessInfo.processInfo().environment["SG2TestPassphrase"]
+
+			if let privateRepo = privateRepo, gitUsername = username, publicKey = publicKey, privateKey = privateKey, passphrase = passphrase {
+				it("should be able to clone a remote repository requiring credentials") {
+					let remoteRepoURL = NSURL(string: privateRepo)
+					let localURL =  self.temporaryURLForPurpose("private-remote-clone")
+
+					let cloneResult = Repository.cloneFromURL(remoteRepoURL!, toWorkingDirectory: localURL,
+						credentialsProvider: { (type, url, username) -> Credential? in
+							expect(type.contains(.SSHMemory)).to(beTrue())
+							expect(url).to(equal(remoteRepoURL?.absoluteString))
+							expect(username).to(equal(gitUsername))
+
+							return SSHMemoryCredential(username: gitUsername, publicKey: publicKey, privateKey: privateKey, passphrase: passphrase)
+					})
+
+					expect(cloneResult).to(haveSucceeded())
+
+					if case .Success(let clonedRepo) = cloneResult {
+						let remoteResult = clonedRepo.remoteWithName("origin")
+						expect(remoteResult).to(haveSucceeded())
+
+						if case .Success(let remote) = remoteResult {
+							expect(remote.URL).to(equal(remoteRepoURL?.absoluteString))
+						}
+					}
+				}
+			}
 		}
 		
 		describe("Repository.blobWithOID()") {

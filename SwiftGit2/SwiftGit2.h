@@ -24,3 +24,4 @@ typedef void (^SG2CheckoutProgressBlock)(NSString * __nullable, NSUInteger, NSUI
 /// implementation detail that, unfortunately, leaks through to the public headers.
 extern git_checkout_options SG2CheckoutOptions(SG2CheckoutProgressBlock __nullable progress);
 extern git_clone_options SG2CloneOptions();
+extern git_fetch_options SG2FetchOptions();
